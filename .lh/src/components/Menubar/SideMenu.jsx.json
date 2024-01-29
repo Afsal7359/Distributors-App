@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/components/Menubar/SideMenu.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1706520985483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1706520992945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+import React from 'react';\r\n+import { View, Text, TouchableOpacity } from 'react-native';\r\n+\r\n+const SideMenu = ({ navigation }) => {\r\n+  const navigateToScreen = (screenName) => () => {\r\n+    navigation.navigate(screenName);\r\n+  };\r\n+\r\n+  return (\r\n+    <View style={{ flex: 1, padding: 16 }}>\r\n+      <TouchableOpacity onPress={navigateToScreen('Home')}>\r\n+        <Text>Home</Text>\r\n+      </TouchableOpacity>\r\n+     \r\n+    </View>\r\n+  );\r\n+};\r\n+\r\n+export default SideMenu;\r\n"
+                },
+                {
+                    "date": 1706521018642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+import React from 'react';\r\n+import { View, Text, TouchableOpacity } from 'react-native';\r\n+\r\n+const SideMenu = ({ navigation }) => {\r\n+  const navigateToScreen = (screenName) => () => {\r\n+    navigation.navigate(screenName);\r\n+  };\r\n+\r\n+  return (\r\n+    <View style={{ flex: 1, padding: 16 }}>\r\n+      <TouchableOpacity onPress={navigateToScreen('dashboard')}>\r\n+        <Text>Home</Text>\r\n+      </TouchableOpacity>\r\n+     \r\n+    </View>\r\n+  );\r\n+};\r\n+\r\n+export default SideMenu;\r\n"
+                },
+                {
+                    "date": 1706521023737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+import React from 'react';\r\n+import { View, Text, TouchableOpacity } from 'react-native';\r\n+\r\n+const SideMenu = ({ navigation }) => {\r\n+  const navigateToScreen = (screenName) => () => {\r\n+    navigation.navigate(screenName);\r\n+  };\r\n+\r\n+  return (\r\n+    <View style={{ flex: 1, padding: 16 }}>\r\n+      <TouchableOpacity onPress={navigateToScreen('dashboard')}>\r\n+        <Text>Dashboard</Text>\r\n+      </TouchableOpacity>\r\n+     \r\n+    </View>\r\n+  );\r\n+};\r\n+\r\n+export default SideMenu;\r\n"
+                },
+                {
+                    "date": 1706521075265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+import React from 'react';\r\n+import { View, Text, TouchableOpacity } from 'react-native';\r\n+\r\n+const SideMenu = ({ navigation }) => {\r\n+  const navigateToScreen = (screenName) => () => {\r\n+    navigation.navi(screenName);\r\n+  };\r\n+\r\n+  return (\r\n+    <View style={{ flex: 1, padding: 16 }}>\r\n+      <TouchableOpacity onPress={navigateToScreen('dashboard')}>\r\n+        <Text>Dashboard</Text>\r\n+      </TouchableOpacity>\r\n+     \r\n+    </View>\r\n+  );\r\n+};\r\n+\r\n+export default SideMenu;\r\n"
+                },
+                {
+                    "date": 1706521083392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,94 +2,18 @@\n import { View, Text, TouchableOpacity } from 'react-native';\r\n \r\n const SideMenu = ({ navigation }) => {\r\n   const navigateToScreen = (screenName) => () => {\r\n-    navigation.navi(screenName);\r\n-  };\r\n-\r\n-  return (\r\n-    <View style={{ flex: 1, padding: 16 }}>\r\n-      <TouchableOpacity onPress={navigateToScreen('dashboard')}>\r\n-        <Text>Dashboard</Text>\r\n-      </TouchableOpacity>\r\n-     \r\n-    </View>\r\n-  );\r\n-};\r\n-\r\n-export default SideMenu;\r\n-import React from 'react';\r\n-import { View, Text, TouchableOpacity } from 'react-native';\r\n-\r\n-const SideMenu = ({ navigation }) => {\r\n-  const navigateToScreen = (screenName) => () => {\r\n     navigation.navigate(screenName);\r\n   };\r\n \r\n   return (\r\n     <View style={{ flex: 1, padding: 16 }}>\r\n       <TouchableOpacity onPress={navigateToScreen('dashboard')}>\r\n-        <Text>Dashboard</Text>\r\n+        <Text>ashboard</Text>\r\n       </TouchableOpacity>\r\n      \r\n     </View>\r\n   );\r\n };\r\n \r\n export default SideMenu;\r\n-import React from 'react';\r\n-import { View, Text, TouchableOpacity } from 'react-native';\r\n-\r\n-const SideMenu = ({ navigation }) => {\r\n-  const navigateToScreen = (screenName) => () => {\r\n-    navigation.navigate(screenName);\r\n-  };\r\n-\r\n-  return (\r\n-    <View style={{ flex: 1, padding: 16 }}>\r\n-      <TouchableOpacity onPress={navigateToScreen('dashboard')}>\r\n-        <Text>Home</Text>\r\n-      </TouchableOpacity>\r\n-     \r\n-    </View>\r\n-  );\r\n-};\r\n-\r\n-export default SideMenu;\r\n-import React from 'react';\r\n-import { View, Text, TouchableOpacity } from 'react-native';\r\n-\r\n-const SideMenu = ({ navigation }) => {\r\n-  const navigateToScreen = (screenName) => () => {\r\n-    navigation.navigate(screenName);\r\n-  };\r\n-\r\n-  return (\r\n-    <View style={{ flex: 1, padding: 16 }}>\r\n-      <TouchableOpacity onPress={navigateToScreen('Home')}>\r\n-        <Text>Home</Text>\r\n-      </TouchableOpacity>\r\n-     \r\n-    </View>\r\n-  );\r\n-};\r\n-\r\n-export default SideMenu;\r\n-import React from 'react';\r\n-import { View, Text, TouchableOpacity } from 'react-native';\r\n-\r\n-const SideMenu = ({ navigation }) => {\r\n-  const navigateToScreen = (screenName) => () => {\r\n-    navigation.navigate(screenName);\r\n-  };\r\n-\r\n-  return (\r\n-    <View style={{ flex: 1, padding: 16 }}>\r\n-      <TouchableOpacity onPress={navigateToScreen('Home')}>\r\n-        <Text>Home</Text>\r\n-      </TouchableOpacity>\r\n-      {/* Add more items as needed */}\r\n-    </View>\r\n-  );\r\n-};\r\n-\r\n-export default SideMenu;\r\n"
+                }
+            ],
+            "date": 1706520985483,
+            "name": "Commit-0",
+            "content": "import React from 'react';\r\nimport { View, Text, TouchableOpacity } from 'react-native';\r\n\r\nconst SideMenu = ({ navigation }) => {\r\n  const navigateToScreen = (screenName) => () => {\r\n    navigation.navigate(screenName);\r\n  };\r\n\r\n  return (\r\n    <View style={{ flex: 1, padding: 16 }}>\r\n      <TouchableOpacity onPress={navigateToScreen('Home')}>\r\n        <Text>Home</Text>\r\n      </TouchableOpacity>\r\n      {/* Add more items as needed */}\r\n    </View>\r\n  );\r\n};\r\n\r\nexport default SideMenu;\r\n"
+        }
+    ]
+}

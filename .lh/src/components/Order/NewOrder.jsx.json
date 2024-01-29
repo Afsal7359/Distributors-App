@@ -1,0 +1,98 @@
+{
+    "sourceFile": "src/components/Order/NewOrder.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 20,
+            "patches": [
+                {
+                    "date": 1706529266284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1706529857288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import { View, Text } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const NewOrder = () => {\r\n+  return (\r\n+    <View>\r\n+     \r\n+    </View>\r\n+  )\r\n+}\r\n+\r\n+export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706529907240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,10 @@\n \r\n const NewOrder = () => {\r\n   return (\r\n     <View>\r\n-     \r\n+      <Text>Selected Item</Text>\r\n     </View>\r\n   )\r\n }\r\n \r\n-export default NewOrder\n\\ No newline at end of file\n-rnfe\n+export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706529915530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n       <Text>Selected Item</Text>\r\n     </View>\r\n   )\r\n }\r\n-\r\n+const styles =\r\n export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706529921330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import { View, Text, StyleSheet } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const NewOrder = () => {\r\n+  return (\r\n+    <View>\r\n+      <Text>Selected Item</Text>\r\n+    </View>\r\n+  )\r\n+}\r\n+const styles = StyleSheet\r\n+export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706529928992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import { View, Text, StyleSheet } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const NewOrder = () => {\r\n+  return (\r\n+    <View>\r\n+      <Text>Selected Item</Text>\r\n+    </View>\r\n+  )\r\n+}\r\n+const styles = StyleSheet.create({\r\n+    \r\n+})\r\n+export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706529938706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import { View, Text, StyleSheet } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const NewOrder = () => {\r\n+  return (\r\n+    <View>\r\n+      <Text>Selected Item</Text>\r\n+    </View>\r\n+  )\r\n+}\r\n+const styles = StyleSheet.create({\r\n+    selectedtext:{\r\n+        \r\n+    }\r\n+})\r\n+export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706529944185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import { View, Text, StyleSheet } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const NewOrder = () => {\r\n+  return (\r\n+    <View>\r\n+      <Text>Selected Item</Text>\r\n+    </View>\r\n+  )\r\n+}\r\n+const styles = StyleSheet.create({\r\n+    selectedtext:{\r\n+        fontSize:20,\r\n+        \r\n+    }\r\n+})\r\n+export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706529953411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import { View, Text, StyleSheet } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const NewOrder = () => {\r\n+  return (\r\n+    <View>\r\n+      <Text>Selected Item</Text>\r\n+    </View>\r\n+  )\r\n+}\r\n+const styles = StyleSheet.create({\r\n+    selectedtext:{\r\n+        fontSize:20,\r\n+        marginVertical:\r\n+    }\r\n+})\r\n+export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706529964380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,79 +10,8 @@\n }\r\n const styles = StyleSheet.create({\r\n     selectedtext:{\r\n         fontSize:20,\r\n-        marginVertical:\r\n+        marginVertical:25\r\n     }\r\n })\r\n-export default NewOrder\n-import { View, Text, StyleSheet } from 'react-native'\r\n-import React from 'react'\r\n-\r\n-const NewOrder = () => {\r\n-  return (\r\n-    <View>\r\n-      <Text>Selected Item</Text>\r\n-    </View>\r\n-  )\r\n-}\r\n-const styles = StyleSheet.create({\r\n-    selectedtext:{\r\n-        fontSize:20,\r\n-        \r\n-    }\r\n-})\r\n-export default NewOrder\n-import { View, Text, StyleSheet } from 'react-native'\r\n-import React from 'react'\r\n-\r\n-const NewOrder = () => {\r\n-  return (\r\n-    <View>\r\n-      <Text>Selected Item</Text>\r\n-    </View>\r\n-  )\r\n-}\r\n-const styles = StyleSheet.create({\r\n-    selectedtext:{\r\n-        \r\n-    }\r\n-})\r\n-export default NewOrder\n-import { View, Text, StyleSheet } from 'react-native'\r\n-import React from 'react'\r\n-\r\n-const NewOrder = () => {\r\n-  return (\r\n-    <View>\r\n-      <Text>Selected Item</Text>\r\n-    </View>\r\n-  )\r\n-}\r\n-const styles = StyleSheet.create({\r\n-    \r\n-})\r\n-export default NewOrder\n-import { View, Text, StyleSheet } from 'react-native'\r\n-import React from 'react'\r\n-\r\n-const NewOrder = () => {\r\n-  return (\r\n-    <View>\r\n-      <Text>Selected Item</Text>\r\n-    </View>\r\n-  )\r\n-}\r\n-const styles = StyleSheet\r\n-export default NewOrder\n-import { View, Text } from 'react-native'\r\n-import React from 'react'\r\n-\r\n-const NewOrder = () => {\r\n-  return (\r\n-    <View>\r\n-      <Text>Selected Item</Text>\r\n-    </View>\r\n-  )\r\n-}\r\n-const styles =\r\n export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706529971398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import { View, Text, StyleSheet } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const NewOrder = () => {\r\n+  return (\r\n+    <View>\r\n+      <Text sty>Selected Item</Text>\r\n+    </View>\r\n+  )\r\n+}\r\n+const styles = StyleSheet.create({\r\n+    selectedtext:{\r\n+        fontSize:20,\r\n+        marginVertical:25\r\n+    }\r\n+})\r\n+export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706529978921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const NewOrder = () => {\r\n   return (\r\n     <View>\r\n-      <Text sty>Selected Item</Text>\r\n+      <Text style={style}>Selected Item</Text>\r\n     </View>\r\n   )\r\n }\r\n const styles = StyleSheet.create({\r\n@@ -13,22 +13,5 @@\n         fontSize:20,\r\n         marginVertical:25\r\n     }\r\n })\r\n-export default NewOrder\n-import { View, Text, StyleSheet } from 'react-native'\r\n-import React from 'react'\r\n-\r\n-const NewOrder = () => {\r\n-  return (\r\n-    <View>\r\n-      <Text>Selected Item</Text>\r\n-    </View>\r\n-  )\r\n-}\r\n-const styles = StyleSheet.create({\r\n-    selectedtext:{\r\n-        fontSize:20,\r\n-        marginVertical:25\r\n-    }\r\n-})\r\n export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706529992581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import { View, Text, StyleSheet } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const NewOrder = () => {\r\n+  return (\r\n+    <View>\r\n+      <Text style={styles.selectedtext}>Selected Item</Text>\r\n+    </View>\r\n+  )\r\n+}\r\n+const styles = StyleSheet.create({\r\n+    selectedtext:{\r\n+        fontSize:15,\r\n+        marginVertical:25\r\n+    }\r\n+})\r\n+export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706529998462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import { View, Text, StyleSheet } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const NewOrder = () => {\r\n+  return (\r\n+    <View>\r\n+      <Text style={styles.selectedtext}>Selected Item</Text>\r\n+    </View>\r\n+  )\r\n+}\r\n+const styles = StyleSheet.create({\r\n+    selectedtext:{\r\n+        fontSize:15,\r\n+        marginHorizontal:25\r\n+    }\r\n+})\r\n+export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706530006612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import { View, Text, StyleSheet } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const NewOrder = () => {\r\n+  return (\r\n+    <View>\r\n+      <Text style={styles.selectedtext}>Selected Item</Text>\r\n+    </View>\r\n+  )\r\n+}\r\n+const styles = StyleSheet.create({\r\n+    selectedtext:{\r\n+        fontSize:15,\r\n+        margin:25\r\n+    }\r\n+})\r\n+export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706530014115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import { View, Text, StyleSheet } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const NewOrder = () => {\r\n+  return (\r\n+    <View>\r\n+      <Text style={styles.selectedtext}>Selected Item</Text>\r\n+    </View>\r\n+  )\r\n+}\r\n+const styles = StyleSheet.create({\r\n+    selectedtext:{\r\n+        fontSize:15,\r\n+        margin:20\r\n+    }\r\n+})\r\n+export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706530024769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import { View, Text, StyleSheet } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const NewOrder = () => {\r\n+  return (\r\n+    <View>\r\n+      <Text style={styles.selectedtext}>Selected Item</Text>\r\n+    </View>\r\n+  )\r\n+}\r\n+const styles = StyleSheet.create({\r\n+    selectedtext:{\r\n+        fontSize:15,\r\n+        margin:15,\r\n+    }\r\n+})\r\n+export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706530066515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+import { View, Text, StyleSheet } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const NewOrder = () => {\r\n+  return (\r\n+    <View>\r\n+      <Text style={styles.selectedtext}>Selected Item</Text>\r\n+      \r\n+    </View>\r\n+  )\r\n+}\r\n+const styles = StyleSheet.create({\r\n+    selectedtext:{\r\n+        fontSize:15,\r\n+        margin:15,\r\n+    }\r\n+})\r\n+export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706530084586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+import { View, Text, StyleSheet } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const NewOrder = () => {\r\n+  return (\r\n+    <View>\r\n+      <Text style={styles.selectedtext}>Selected Item</Text>\r\n+      <FlatList\r\n+    </View>\r\n+  )\r\n+}\r\n+const styles = StyleSheet.create({\r\n+    selectedtext:{\r\n+        fontSize:15,\r\n+        margin:15,\r\n+    }\r\n+})\r\n+export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706530166815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import { View, Text, StyleSheet } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const NewOrder = () => {\r\n+  return (\r\n+    <View>\r\n+      <Text style={styles.selectedtext}>Selected Item</Text>\r\n+    </View>\r\n+  )\r\n+}\r\n+const styles = StyleSheet.create({\r\n+    selectedtext:{\r\n+        fontSize:15,\r\n+        margin:15,\r\n+    }\r\n+})\r\n+export default NewOrder\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706530174845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import { View, Text, StyleSheet } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const NewOrder = () => {\r\n+  return (\r\n+     <View>\r\n+      <Text style={styles.selectedtext}>Selected Item</Text>\r\n+    </View>\r\n+  )\r\n+}\r\n+const styles = StyleSheet.create({\r\n+    selectedtext:{\r\n+        fontSize:15,\r\n+        margin:15,\r\n+    }\r\n+})\r\n+export default NewOrder\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1706529266284,
+            "name": "Commit-0",
+            "content": "rnfe"
+        }
+    ]
+}
