@@ -45,7 +45,7 @@ const SelectionPage = ({navigation}) => {
         </Picker>
         </View>
       </View>
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('dashboard')}><Text>Submit</Text></TouchableOpacity>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Dashboard')}><Text>Submit</Text></TouchableOpacity>
     </ScrollView>
   )
 }
