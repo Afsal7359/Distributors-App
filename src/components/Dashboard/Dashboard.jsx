@@ -5,7 +5,7 @@ import { StatusBar } from 'expo-status-bar'
 import imageneworder from "../../../assets/neworder.png"
 import orderhistoryimg from "../../../assets/ordershistory.png"
 import productsimage from "../../../assets/product.png";
-import reportimg from "../../../assets/report.png";
+import creationsimage from "../../../assets/creations.png";
 import CircularProgress from 'react-native-circular-progress-indicator';
 
 const Dashboard = ({navigation}) => {
@@ -42,9 +42,9 @@ const Dashboard = ({navigation}) => {
         <Image style={styles.neworderimg} source={productsimage}/> 
             <Text style={styles.cardText}>All Products</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.card4}>
-        <Image style={styles.orderhistoryimg} source={reportimg}/>
-            <Text style={styles.cardText}>Reports</Text>
+        <TouchableOpacity style={styles.card4} onPress={()=> navigation.navigate('creations')}>
+        <Image style={styles.creationimg} source={creationsimage}/>
+            <Text style={styles.cardText}>Creations</Text>
         </TouchableOpacity>
     </View>
   )
@@ -95,8 +95,14 @@ const styles = StyleSheet.create({
     orderhistoryimg:{
         height:60,
         width:60,
-        marginHorizontal:35,
+        marginHorizontal:40,
         marginVertical:15
+    },
+    creationimg:{
+        height:60,
+        width:60,
+        marginHorizontal:40,
+        marginVertical:20
     },
     card3:{
         backgroundColor:"#fff",

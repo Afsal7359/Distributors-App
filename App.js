@@ -9,6 +9,7 @@ import NewOrder from './src/components/Order/NewOrder';
 import Color from './src/Styling Materials/Color';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import CustomDrawer from './src/Styling Materials/CustomDrawer';
+import Creations from './src/components/Creations/Creations';
 
 
 const Drawer = createDrawerNavigator();
@@ -18,15 +19,16 @@ const Stack = createNativeStackNavigator()
 export default function App() {
   return (
     <>
-    {/* <NavigationContainer>
+    <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name='login' component={Login} options={{headerShown:false}}/>
         <Stack.Screen name='selectionpage' component={SelectionPage} options={{headerShown:false}}/>
-      
+        <Stack.Screen name='Dashboard' component={Dashboard} options={{headerShown:false}}/>
         <Stack.Screen name='New Order' component={NewOrder} options={{headerShown:true,headerStyle:{backgroundColor:Color.maincolor}}}/>
+        <Stack.Screen name='creations' component={Creations} options={{headerShown:true,headerStyle:{backgroundColor:Color.maincolor}}}/>
       </Stack.Navigator>
-    </NavigationContainer> */}
-    <NavigationContainer>
+    </NavigationContainer>
+    {/* <NavigationContainer>
     <Drawer.Navigator initialRouteName="Dashboard"
      drawerContent={(props)=> <CustomDrawer {...props}/>}>
         <Stack.Screen name='login' component={Login} options={{headerShown:false}}/>
@@ -34,7 +36,7 @@ export default function App() {
         <Stack.Screen name='Dashboard' component={Dashboard} options={{headerShown:true,headerStyle:{backgroundColor:Color.maincolor}}}/>
         <Stack.Screen name='New Order' component={NewOrder} options={{headerShown:true,headerStyle:{backgroundColor:Color.maincolor}}}/>
     </Drawer.Navigator>
-  </NavigationContainer>
+  </NavigationContainer> */}
   </>
   )
 }
