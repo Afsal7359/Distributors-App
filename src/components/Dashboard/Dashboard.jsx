@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Touchable, TouchableOpacity, Image } from 'react-native'
+import { View, Text, StyleSheet, Touchable, TouchableOpacity, Image, ScrollView } from 'react-native'
 import React, { useState } from 'react'
 import Color from '../../Styling Materials/Color'
 import { StatusBar } from 'expo-status-bar'
@@ -12,7 +12,7 @@ const Dashboard = ({navigation}) => {
     const [user,setuser]=useState("Afsal")
     
   return (
-    <View>
+    <ScrollView>
         <StatusBar style="auto" translucent={false} backgroundColor={Color.maincolor}/>
         <View style={styles.topview}> 
         <View style={styles.progressbar}>
@@ -30,31 +30,35 @@ const Dashboard = ({navigation}) => {
           /></View>
              <Text style={styles.nametext}>{user}</Text>
         </View>
+        <View style={styles.cardview}>
         <TouchableOpacity style={styles.card1} onPress={()=> navigation.navigate('New Order')}>
             <Image style={styles.neworderimg} source={imageneworder}/> 
             <Text style={styles.cardText}>New Order</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.card2}>
+        <TouchableOpacity style={styles.card1}>
             <Image style={styles.orderhistoryimg} source={orderhistoryimg}/>
             <Text style={styles.cardText}>Orders History</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.card3}>
+        </View>
+        <View style={styles.cardview}>
+        <TouchableOpacity style={styles.card1}>
         <Image style={styles.neworderimg} source={productsimage}/> 
             <Text style={styles.cardText}>All Products</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.card4} onPress={()=> navigation.navigate('creations')}>
+        <TouchableOpacity style={styles.card1} onPress={()=> navigation.navigate('creations')}>
         <Image style={styles.creationimg} source={creationsimage}/>
             <Text style={styles.cardText}>Creations</Text>
         </TouchableOpacity>
-    </View>
+        </View>
+    </ScrollView>
   )
 }
 const styles = StyleSheet.create({
     topview:{
         height:280,
         backgroundColor:Color.maincolor,
-        borderBottomLeftRadius:160,
-        borderBottomRightRadius:160,
+        borderBottomLeftRadius:90,
+        borderBottomRightRadius:90,
         alignItems:"center",
         justifyContent:"center"
     },
@@ -69,20 +73,14 @@ const styles = StyleSheet.create({
         height:135,
         width:135,
         borderRadius:10,
-        position:"absolute",
-        top:205,
-        left:25,
-        elevation:105
+        margin:25,
+        elevation:55
     },
-    card2:{
-        backgroundColor:"#fff",
-        height:135,
-        width:135,
-        borderRadius:10,
-        position:"absolute",
-        top:205,
-        left:205,
-        elevation: 105,
+  
+    cardview:{
+        flexDirection:"row",
+        marginVertical:15,
+        justifyContent:"center"
     },
     cardText:{
         fontSize:15,
@@ -104,26 +102,7 @@ const styles = StyleSheet.create({
         marginHorizontal:40,
         marginVertical:20
     },
-    card3:{
-        backgroundColor:"#fff",
-        height:135,
-        width:135,
-        borderRadius:10,
-        position:"absolute",
-        top:405,
-        left:25,
-        elevation:105
-    },
-    card4:{
-        backgroundColor:"#fff",
-        height:135,
-        width:135,
-        borderRadius:10,
-        position:"absolute",
-        top:405,
-        left:205,
-        elevation:105
-    },
+   
     progressbar:{
        marginBottom:10
        

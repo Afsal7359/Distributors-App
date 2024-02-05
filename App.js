@@ -1,42 +1,30 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native'
-import Login from './src/components/Login/Login';
-import SelectionPage from './src/components/Dashboard/SelectionPage';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import TabNavigator from './src/Navigator/TabNavigator';
+import ScreenNavigator from './src/Navigator/ScreenNavigator';
 import Dashboard from './src/components/Dashboard/Dashboard';
-import NewOrder from './src/components/Order/NewOrder';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import AddScreen from './src/components/Dashboard/AddScreen';
 import Color from './src/Styling Materials/Color';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import CustomDrawer from './src/Styling Materials/CustomDrawer';
-import Creations from './src/components/Creations/Creations';
 
-
-const Drawer = createDrawerNavigator();
-
-const Stack = createNativeStackNavigator()
+const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
-    <>
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name='login' component={Login} options={{headerShown:false}}/>
-        <Stack.Screen name='selectionpage' component={SelectionPage} options={{headerShown:false}}/>
-        <Stack.Screen name='Dashboard' component={Dashboard} options={{headerShown:false}}/>
-        <Stack.Screen name='New Order' component={NewOrder} options={{headerShown:true,headerStyle:{backgroundColor:Color.maincolor}}}/>
-        <Stack.Screen name='creations' component={Creations} options={{headerShown:true,headerStyle:{backgroundColor:Color.maincolor}}}/>
-      </Stack.Navigator>
+      <Tab.Navigator>
+        <Tab.Screen name="MainScreen" component={ScreenNavigator} options={{headerShown:false,tabBarIcon: ({ color, size }) => (
+      <Icon name="dashboard" color={color} size={size} />
+        ),}}/>
+         <Tab.Screen name="AddScreen" component={AddScreen} options={{tabBarLabelStyle:{display:"none"},headerShown:false,tabBarIcon: ({ color, size }) => (
+      <Icon name="plus" color={color} size={size} />
+    ),}}/>
+        <Tab.Screen name="Screen" component={TabNavigator} options={{headerShown:false,tabBarIcon: ({ color, size }) => (
+      <Icon name="user" color={color} size={size} />
+    ),}}/>
+      </Tab.Navigator>
     </NavigationContainer>
-    {/* <NavigationContainer>
-    <Drawer.Navigator initialRouteName="Dashboard"
-     drawerContent={(props)=> <CustomDrawer {...props}/>}>
-        <Stack.Screen name='login' component={Login} options={{headerShown:false}}/>
-        <Stack.Screen name='selectionpage' component={SelectionPage} options={{headerShown:false}}/>
-        <Stack.Screen name='Dashboard' component={Dashboard} options={{headerShown:true,headerStyle:{backgroundColor:Color.maincolor}}}/>
-        <Stack.Screen name='New Order' component={NewOrder} options={{headerShown:true,headerStyle:{backgroundColor:Color.maincolor}}}/>
-    </Drawer.Navigator>
-  </NavigationContainer> */}
-  </>
-  )
+  );
 }
