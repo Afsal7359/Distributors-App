@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0917cc6-6559-4290-b7b4-e7ea71d72dfd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+    <list default="true" id="13e96570-c241-4133-a013-d99ba5fe707d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.lh/package.json.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AllProducts/AllProducts.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/OrderHistory/Orderhistory.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.expo/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eas.json" beforeDir="false" afterPath="$PROJECT_DIR$/eas.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Navigator/ScreenNavigator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Navigator/ScreenNavigator.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styling Materials/Color.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styling Materials/Color.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styling Materials/Data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styling Materials/Data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Creations/Creations.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Creations/Creations.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Order/NewOrder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Order/NewOrder.jsx" afterDir="false" />
     </list>
@@ -22,32 +32,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2bl8OeYXF9EyreYvOpiUy23cEj7" />
+  <component name="ProjectId" id="2c4Y0cmIwE96q4xrnLx0mwwhh0T" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;AnalyzeApkAction.lastApkPath&quot;: &quot;C:/Users/user/Desktop/React Native WorkSpace/Distributors-App&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/React Native WorkSpace/Distributors-App&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c0917cc6-6559-4290-b7b4-e7ea71d72dfd" name="Changes" comment="" />
-      <created>1706778275163</created>
+      <changelist id="13e96570-c241-4133-a013-d99ba5fe707d" name="Changes" comment="" />
+      <created>1707372098724</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1706778275163</updated>
+      <updated>1707372098724</updated>
     </task>
     <servers />
   </component>

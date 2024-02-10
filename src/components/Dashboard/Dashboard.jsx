@@ -35,13 +35,13 @@ const Dashboard = ({navigation}) => {
             <Image style={styles.neworderimg} source={imageneworder}/> 
             <Text style={styles.cardText}>New Order</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.card1}>
+        <TouchableOpacity style={styles.card1} onPress={()=> navigation.navigate('Order History')}>
             <Image style={styles.orderhistoryimg} source={orderhistoryimg}/>
             <Text style={styles.cardText}>Orders History</Text>
         </TouchableOpacity>
         </View>
         <View style={styles.cardview}>
-        <TouchableOpacity style={styles.card1}>
+        <TouchableOpacity style={styles.card1} onPress={()=> navigation.navigate("All Products")}>
         <Image style={styles.neworderimg} source={productsimage}/> 
             <Text style={styles.cardText}>All Products</Text>
         </TouchableOpacity>
@@ -74,7 +74,6 @@ const styles = StyleSheet.create({
         width:135,
         borderRadius:10,
         margin:25,
-        elevation:55
     },
   
     cardview:{
